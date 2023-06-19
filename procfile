@@ -1,0 +1,4 @@
+release : python mange.py makemigrations --no-input
+release : python mange.py migrate --no-input
+
+web : gunicorn contactsapi.wsgi
